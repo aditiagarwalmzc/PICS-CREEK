@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-body, html {
+/* HOME */
+
+body#home {
     height: 100%;
     background-image: url(images/home-img.png);
     background-size: cover;
@@ -17,6 +19,25 @@ html {
     font-size: 62.5%;
     font-family: sans-serif;
 }
+
+/* EDIT */
+
+body#edit {
+   background-color: #2e2d2d; 
+}
+
+#fileBtn {
+    background-color: aliceblue;
+    font-size: 2em;
+    border-radius: 2rem;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    right: 45%;
+    top: 20%;
+}
+
+/* HEADER */
 
 li {
     list-style: none;
@@ -33,8 +54,6 @@ a {
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-
-/* HEADER */
 
 .header{
     background: black;
