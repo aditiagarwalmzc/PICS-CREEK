@@ -33,8 +33,65 @@ body#edit {
     padding: 10px;
     text-align: center;
     position: absolute;
-    right: 45%;
-    top: 20%;
+    right: 40%;
+    top: 15%;
+    margin-right: -126px;
+}
+
+#img {
+    width: 30%;
+    height: 30%;
+    margin-left: 50%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+/* SIDENAV */
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    background-color:#504f4f;
+    overflow-x: hidden;
+    padding-top: 70px;
+}
+  
+.sidenav label {
+    padding: 6px 6px 60px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;   
+}
+  
+.sidenav label:hover {
+    color: red;
+}
+
+select {
+    width: 40%;
+    margin-left: 2px;
+}
+
+/* SLIDER */
+input {
+    width: 60%;
+}
+  
+output {
+    width: 5%;
+    text-align: center;
+}
+
+.slider {
+    margin-bottom: 20px;
+    margin-left: 50%;
 }
 
 /* HEADER */
@@ -58,7 +115,10 @@ a {
 .header{
     background: black;
     height: 66px;
-    box-shadow: 4px 1px 18px 10px #d4d3d38c;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header * {

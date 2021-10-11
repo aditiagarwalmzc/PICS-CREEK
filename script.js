@@ -18,6 +18,11 @@ function closeMenu() {
 }
 
 function loadFile(event) {
-	var image = document.getElementById('output');
+	var image = document.getElementById('img');
 	image.src = URL.createObjectURL(event.target.files[0]);
+}
+
+function set(e){
+    document.getElementById('img').style["webkitFilter"] = "sepia("+e.value+")";
+    document.getElementById('Amount').innerHTML="("+e.value+")";
 }
