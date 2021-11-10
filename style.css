@@ -27,7 +27,8 @@ body#edit {
 }
 
 #fileBtn {
-    background-color: aliceblue;
+    background-color: rgba(207, 207, 207);
+    font-weight: 520;
     font-size: 2em;
     border-radius: 2rem;
     padding: 10px;
@@ -36,14 +37,16 @@ body#edit {
     right: 40%;
     top: 15%;
     margin-right: -126px;
+    z-index: 6;
 }
 
 #img {
-    width: 30%;
-    height: 30%;
-    margin-left: 50%;
-    margin-top: 15%;
+    width: 40%;
+    height: 40%;
+    margin-left: 45%;
+    margin-top: 20%;
     margin-bottom: 5%;
+    z-index: 7;
 }
 /* SIDENAV */
 .sidenav {
@@ -55,6 +58,7 @@ body#edit {
     background-color:#504f4f;
     overflow-x: hidden;
     padding-top: 70px;
+    z-index: 8;
 }
   
 .sidenav label {
@@ -71,7 +75,7 @@ body#edit {
 }
   
 .sidenav label:hover {
-    color: red;
+    color: black;
 }
 
 select {
@@ -81,7 +85,7 @@ select {
 
 /* SLIDER */
 input {
-    width: 60%;
+    width: 70%;
 }
   
 output {
@@ -90,8 +94,10 @@ output {
 }
 
 .slider {
-    margin-bottom: 20px;
-    margin-left: 50%;
+    -webkit-appearance: none;
+    margin-top: -40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 /* HEADER */
@@ -119,6 +125,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 header * {
@@ -132,7 +139,7 @@ header .nav-logo {
     font-family: 'AfrahDemo', sans-serif;
     float: left;
     height: inherit;
-    margin-left: 1.7em;
+    margin-left: 1.2em;
 }
 
 header ul {
@@ -154,6 +161,7 @@ header ul li a {
     padding-bottom: 10px;
     font-size: 1.2em;
     text-decoration: none;
+    z-index: 9;
 }
 
 header ul li a:after {

@@ -16,7 +16,7 @@
             <a href="#" class="nav-logo">PICS CREEK</a>
             </h1>
         <ul class = "nav">
-            <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
             <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
             <li class="nav-item"><a href="edit.html" class="nav-link">EDIT</a></li>
             <li class="nav-item"><a href="#" class="nav-link">RESOURCES</a></li>
@@ -31,21 +31,38 @@
 
     <!-- upload image button -->
     <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-    <p><label for="file" style="cursor: pointer;" id="fileBtn">Upload Image</label></p>
-    <p><img id="img" /></p>
+    <p><label for="file" style="cursor: pointer;" id="fileBtn">UPLOAD IMAGE</label></p>
+    <p><img id="img"></p>
     <!-- side nav -->
     <div class="sidenav">
-        <label for="filter-select">FILTER</label>
-        <label>ADJUST</label>
-        <label>CROP</label>
-        <label>ROTATE</label>
-        <label>FLIP</label>
-        <label>REMOVE BACKGROUND</label>
+        <label for="filter-select">FILTER AND ADJUST</label>
+        <div class="slider">
+            <p style="color: aliceblue;">Sepia</p>
+            <input id="sepia" type="range" oninput="setSepia(this);" value="0" step="0.1" min="0" max="1"><span id="Amount" style="color: white;"> 0</span><br/><br>
+    
+            <p style="color: aliceblue;">Grayscale</p>
+            <input id="Grayscale" type="range" oninput="setGs(this);" value="0" step="0.1" min="0" max="1"><span id="Amount2" style="color: white;"> 0</span><br/><br>
+    
+            <p style="color: aliceblue;">Brightness</p>
+            <input id="brightness" type="range" oninput="setBright(this);" value="1" step="1" min="1" max="10"><span id="Amount3" style="color: white;"> 1</span><br/><br>
+    
+            <p style="color: aliceblue;">Contrast</p>
+            <input id="contrast" type="range" oninput="setContrast(this);" value="1" min="1" max="10"><span id="Amount4" style="color: white;"> 1</span><br/><br>
+    
+            <p style="color: aliceblue;">Opacity</p>
+            <input id="opacity" type="range" oninput="setOpacity(this);" value="1" step="0.1" min="0.1" max="1"><span id="Amount5" style="color: white;"> 1</span><br/><br>
+
+            <p style="color: aliceblue;">Hue-rotate</p>
+            <input id=hue step=1 type="range" min=0 max=360 value=0><span id="Amount6" style="color: white;"> 0</span><br/><br>
+
+
+        </div>
+        <label onclick = "RotateImg()">ROTATE</label>
+        <label onclick = "flipping()">FLIP</label>
+        <label onclick = "invert()">INVERT COLOURS</label>
+        <label onclick = "original()">ORIGINAL</label>
     </div>
-    <div class="slider">
-        <p style="color: aliceblue;">Sepia</p>
-        <input id="sepia" type="range" oninput="set(this);" value="0" step="0.1" min="0" max="1"><span id="Amount" style="color: white;">(0)</span><br/>
-    </div>
+    
     
     <script src="script.js"></script>
 </body>
